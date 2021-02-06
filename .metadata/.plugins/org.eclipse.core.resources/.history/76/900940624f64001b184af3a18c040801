@@ -1,0 +1,32 @@
+package ECommerce;
+
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.*;
+
+public class Groceries {
+	public static void main(String[] args) {
+		System.setProperty
+		("webdriver.chrome.driver", "C:\\Learnings\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/seleniumPractise");
+		String[] vegetables= {"Cucumber, Brocolli, Beetroot"};
+		List<WebElement> allListOfVegetables = driver.findElements(By.cssSelector("h4.product-name"));
+		List items = Arrays.asList(vegetables);
+		for(int i = 0;i<allListOfVegetables.size();i++) {
+		  driver.findElements(By.cssSelector("h4.product-name")).get(i);
+		 
+		 
+		if(allListOfVegetables.contains())	
+		}
+		
+	}
+
+}
